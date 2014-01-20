@@ -26,14 +26,13 @@ public class MainActivity extends Activity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
 
-
     private MessageConsumer mConsumer;
 	private TextView mOutput;
 	private String QUEUE_NAME = "";
 	private String EXCHANGE_NAME = "logs";
 	private String message = "";
 	private String name = "";
-	private final String SERVER = "ENTER YOUR SERVER";
+	private final String SERVER = "YOUR SERVER";
 
 	/** Called when the activity is first created. */
 	@Override
@@ -75,21 +74,18 @@ public class MainActivity extends Activity {
 				return false;
 			}
 		});
-		
-		
+
 		// The output TextView we'll use to display messages
 		mOutput = (TextView) findViewById(R.id.output);
 
 		// Create the consumer
 		mConsumer = new MessageConsumer(SERVER, "logs", "fanout");
-
-//		new receive_a().execute();
 		
 		// Connect to broker
-		mConsumer.connectToRabbitMQ();
+        new consumerconnect().execute();
+//		mConsumer.connectToRabbitMQ();
 		
 		// register for messages
-
 
         Log.i(TAG,"After mConsumer.connectToRabbitMQ()");
 
@@ -104,41 +100,12 @@ public class MainActivity extends Activity {
 				}
 
 				mOutput.append("\n" + text);
-				
-				
 				Log.i(TAG,"Text received "+ text);
 			}
 		});
 
 	}
-//	private class receive_a extends AsyncTask<String, Void, Void>{
-//
-//		@Override
-//		protected Void doInBackground(String... params) {
-//			// TODO Auto-generated method stub
-//			mConsumer = new MessageConsumer("", "logs", "fanout");
-//			mConsumer.connectToRabbitMQ();
-//			mConsumer.setOnReceiveMessageHandler(new OnReceiveMessageHandler() {
-//
-//				public void onReceiveMessage(byte[] message) {
-//					String text = "";
-//					try {
-//						text = new String(message, "UTF8");
-//					} catch (UnsupportedEncodingException e) {
-//						e.printStackTrace();
-//					}
-//
-//					mOutput.append("\n" + text);
-//					
-//					
-//					Log.i("ANUJ","Text received "+ text);
-//				}
-//			});
-//			return null;
-//		}
-//		
-//	}
-//	
+
 	private class send extends AsyncTask<String, Void, Void> {
 
 		@Override
@@ -147,36 +114,26 @@ public class MainActivity extends Activity {
 
 				ConnectionFactory factory = new ConnectionFactory();
 				factory.setHost(SERVER);
-
-				// my internet connection is a bit restrictive so I have use an
-				// external server
-				// which has RabbitMQ installed on it. So I use "setUsername"
-//				// and "setPassword"
-//				factory.setUsername("guest");
-//				factory.setPassword("guest");
 				Connection connection = factory.newConnection();
 				Channel channel = connection.createChannel();
-				
-		        
 				channel.exchangeDeclare(EXCHANGE_NAME, "fanout");
-
                 channel.queueDeclare(QUEUE_NAME, false, false, false, null);
 				
 				//String queueName = channel.queueDeclare().getQueue();
 //		       channel.queueBind(QUEUE_NAME, EXCHANGE_NAME, "");
-		        
-				String tempstr = "";
-				for (int i = 0; i < Message.length; i++)
-					tempstr += Message[i];
+
+                StringBuffer tempstr = new StringBuffer();
+
+                for (String msg : Message){
+                    tempstr.append(msg);
+                }
 
 //				channel.basicPublish(EXCHANGE_NAME, QUEUE_NAME, null,
 //						tempstr.getBytes());
 				
 				channel.basicPublish(EXCHANGE_NAME, QUEUE_NAME, null,
-						tempstr.getBytes());
-
+                        tempstr.toString().getBytes());
 				channel.close();
-
 				connection.close();
 
 			} catch (Exception e) {
@@ -186,8 +143,26 @@ public class MainActivity extends Activity {
 			// TODO Auto-generated method stub
 			return null;
 		}
-
 	}
+
+    private class consumerconnect extends AsyncTask<String, Void, Void> {
+
+        @Override
+        protected Void doInBackground(String... Message) {
+            try {
+                // Connect to broker
+                mConsumer.connectToRabbitMQ();
+
+            } catch (Exception e) {
+                // TODO: handle exception
+                e.printStackTrace();
+            }
+            // TODO Auto-generated method stub
+            return null;
+        }
+
+    }
+
 
 	@Override
 	protected void onResume() {

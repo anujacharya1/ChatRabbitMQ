@@ -62,40 +62,16 @@ public abstract class IConnectToRabbitMQ {
 	public boolean connectToRabbitMQ() {
 		if (mModel != null && mModel.isOpen())// already declared
 			return true;
+
 		try {
-			
-			Thread thread = new Thread(new Runnable(){
-			    @Override
-			    public void run() {
-			        try {
-                        Log.e(TAG, "In the thread");
-			            //Your code goes here
-			        	ConnectionFactory connectionFactory = new ConnectionFactory();
 
-						connectionFactory.setHost(mServer);
+            ConnectionFactory connectionFactory = new ConnectionFactory();
+            connectionFactory.setHost(mServer);
+            mConnection = connectionFactory.newConnection();
+            mModel = mConnection.createChannel();
+            mModel.exchangeDeclare(mExchange, MyExchangeType);
 
-						mConnection = connectionFactory.newConnection();
-						mModel = mConnection.createChannel();
-						mModel.exchangeDeclare(mExchange, MyExchangeType);
-
-			        } catch (Exception e) {
-			            e.printStackTrace();
-
-			        }
-			    }
-			});
-
-			thread.start();
-
-//			ConnectionFactory connectionFactory = new ConnectionFactory();
-//
-//			connectionFactory.setHost(mServer);
-//
-//			mConnection = connectionFactory.newConnection();
-//			mModel = mConnection.createChannel();
-//			mModel.exchangeDeclare(mExchange, MyExchangeType);
-//
-			return false;
+			return true;
 			
 		} catch (Exception e) {
             Log.e(TAG, "Got an exception");
