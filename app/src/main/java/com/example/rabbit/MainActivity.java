@@ -33,15 +33,15 @@ public class MainActivity extends Activity {
 	private String EXCHANGE_NAME = "logs";
 	private String message = "";
 	private String name = "";
-	private final String SERVER = "50.59.22.184";
+	private final String SERVER = "ENTER YOUR SERVER";
 
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		Toast.makeText(MainActivity.this, "RabbitMQ Chat Service!",
-				Toast.LENGTH_LONG).show();
+//		Toast.makeText(MainActivity.this, "RabbitMQ Chat Service!",
+//				Toast.LENGTH_LONG).show();
 
 		final EditText etv1 = (EditText) findViewById(R.id.out3);
 	

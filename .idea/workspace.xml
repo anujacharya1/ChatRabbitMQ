@@ -14,7 +14,13 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="INFO" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04a61061-e841-485e-9cf5-cc3821cd0d98" name="Default" comment="" />
+    <list default="true" id="04a61061-e841-485e-9cf5-cc3821cd0d98" name="Default" comment="- Layout refactored&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/rabbit/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/rabbit/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/source/r/debug/com/example/rabbit/R.java" afterPath="$PROJECT_DIR$/app/build/source/r/debug/com/example/rabbit/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Rabbit.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -88,11 +94,11 @@
       </file>
       <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="android-designer">
+          <provider selected="true" editor-type-id="android-designer">
             <state />
           </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="25" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="660">
+          <provider editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
@@ -101,7 +107,7 @@
       <file leaf-file-name="SocketChannelImpl.class" pinned="false" current="false" current-in-tab="false">
         <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/sun/nio/ch/SocketChannelImpl.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="0" selection-start="5023" selection-end="5023" vertical-scroll-proportion="0.0" vertical-offset="1710" max-vertical-offset="1800">
+            <state line="114" column="0" selection-start="5212" selection-end="5212" vertical-scroll-proportion="0.0" vertical-offset="1710" max-vertical-offset="1800">
               <folding />
             </state>
           </provider>
@@ -110,7 +116,7 @@
       <file leaf-file-name="SocketDispatcher.class" pinned="false" current="false" current-in-tab="false">
         <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/sun/nio/ch/SocketDispatcher.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="881" selection-end="881" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="390">
+            <state line="20" column="0" selection-start="945" selection-end="945" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="390">
               <folding />
             </state>
           </provider>
@@ -119,7 +125,7 @@
       <file leaf-file-name="IConnectToRabbitMQ.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rabbit/IConnectToRabbitMQ.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="72" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.0" vertical-offset="923" max-vertical-offset="1575">
+            <state line="78" column="72" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1575">
               <folding />
             </state>
           </provider>
@@ -128,7 +134,7 @@
       <file leaf-file-name="MessageConsumer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rabbit/MessageConsumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="10" selection-start="1737" selection-end="1737" vertical-scroll-proportion="0.0" vertical-offset="638" max-vertical-offset="1965">
+            <state line="64" column="10" selection-start="1737" selection-end="1737" vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="2250">
               <folding />
             </state>
           </provider>
@@ -137,7 +143,7 @@
       <file leaf-file-name="OnReceiveMessageHandler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rabbit/OnReceiveMessageHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="17" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+            <state line="2" column="17" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="165">
               <folding />
             </state>
           </provider>
@@ -146,10 +152,8 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rabbit/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="160" column="65" selection-start="4456" selection-end="4456" vertical-scroll-proportion="2.4065042" vertical-offset="1703" max-vertical-offset="3015">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="66" column="32" selection-start="2054" selection-end="2054" vertical-scroll-proportion="0.22863741" vertical-offset="546" max-vertical-offset="2715">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -169,6 +173,9 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="tasksExpandState">
@@ -536,15 +543,15 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/rabbit/AsyncConnect.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/rabbit/MessageConsumer.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/rabbit/IConnectToRabbitMQ.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/rabbit/MainActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="529" />
-    <option name="y" value="33" />
+    <option name="x" value="589" />
+    <option name="y" value="22" />
     <option name="width" value="835" />
     <option name="height" value="821" />
   </component>
@@ -574,7 +581,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -718,6 +724,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -732,6 +739,10 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="229" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.WIDTH" value="101" />
     <property name="FullScreen" value="false" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Android Application.app">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -888,6 +899,23 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="04a61061-e841-485e-9cf5-cc3821cd0d98" name="Default" comment="" />
@@ -897,12 +925,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="529" y="33" width="835" height="821" extended-state="0" />
-    <editor active="true" />
+    <frame x="589" y="22" width="835" height="821" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.058682635" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -911,21 +940,20 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292011" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6046832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22096318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33892214" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33892214" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292011" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.058682635" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -942,11 +970,27 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="- Layout refactored&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Layout refactored&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rabbit/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="156" column="40" selection-start="4312" selection-end="4312" vertical-scroll-proportion="0.0" vertical-offset="2340" max-vertical-offset="3015">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/util/concurrent/ThreadPoolExecutor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="169" column="0" selection-start="7689" selection-end="7689" vertical-scroll-proportion="0.0" vertical-offset="2535" max-vertical-offset="2625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="19" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
@@ -1002,9 +1046,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rabbit/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="80" column="53" selection-start="2427" selection-end="2433" vertical-scroll-proportion="0.0" vertical-offset="1200" max-vertical-offset="3015">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1070,9 +1112,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rabbit/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="25" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="3015">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1138,9 +1178,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rabbit/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="158" column="16" selection-start="4397" selection-end="4397" vertical-scroll-proportion="0.0" vertical-offset="2370" max-vertical-offset="3015">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1206,9 +1244,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rabbit/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="3045">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1243,14 +1279,14 @@
     </entry>
     <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/sun/nio/ch/SocketChannelImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="0" selection-start="5023" selection-end="5023" vertical-scroll-proportion="0.0" vertical-offset="1710" max-vertical-offset="1800">
+        <state line="114" column="0" selection-start="5212" selection-end="5212" vertical-scroll-proportion="0.0" vertical-offset="1710" max-vertical-offset="1800">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/sun/nio/ch/SocketDispatcher.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="881" selection-end="881" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="390">
+        <state line="20" column="0" selection-start="945" selection-end="945" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="390">
           <folding />
         </state>
       </provider>
@@ -1263,16 +1299,6 @@
     <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/util/concurrent/ThreadPoolExecutor.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="169" column="0" selection-start="7689" selection-end="7689" vertical-scroll-proportion="0.0" vertical-offset="2364" max-vertical-offset="2610">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="25" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="660">
           <folding />
         </state>
       </provider>
@@ -1291,6 +1317,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rabbit/IConnectToRabbitMQ.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="72" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.0" vertical-offset="923" max-vertical-offset="1575">
@@ -1300,10 +1336,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rabbit/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="65" selection-start="4456" selection-end="4456" vertical-scroll-proportion="2.4065042" vertical-offset="1703" max-vertical-offset="3015">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="66" column="32" selection-start="2054" selection-end="2054" vertical-scroll-proportion="0.22863741" vertical-offset="546" max-vertical-offset="2715">
+          <folding />
         </state>
       </provider>
     </entry>
